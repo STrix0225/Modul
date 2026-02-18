@@ -3,12 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sistem Manajemen Sepatu</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Website</h1>
-        <p>This is a sample webpage to demonstrate HTML structure and styling.</p>
-        <button class="btn">Click Me</button>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cikutra Shoes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Produk</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero text-center text-white d-flex align-items-center bg-secondary py-5">
+        <div class="container">
+            <h1>Sistem Manajemen Sepatu</h1>
+            <p>Kelola data sepatu dengan mudah</p>
+        </div>
     </div>
+
+    <div class="container mt-5">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card dashboard-card mb-3">
+                    <div class="card-body">
+                        <h5>Total Produk</h5>
+                        <h2>12</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card dashboard-card mb-3">
+                    <div class="card-body">
+                        <h5>Stok Tersedia</h5>
+                        <h2>85</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card dashboard-card mb-3">
+                    <div class="card-body">
+                        <h5>Kategori</h5>
+                        <h2>3</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h3 class="mb-4">Daftar Produk</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="assets/NIKE_P_6000.jpg" class="card-img-top" alt="Sepatu Nike P-6000">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike P-6000</h5>
+                        <p class="card-text">Harga: Rp. 1.429.000</p>
+                        <p class="card-text">Stok: 10</p>
+                        <button class="btn btn-primary">Detail</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="assets/AIR_FORCE_1.jpg" class="card-img-top" alt="Sepatu Nike Air Force 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Air Force 1</h5>
+                        <p class="card-text">Harga: Rp 1.529.000</p>
+                        <p class="card-text">Stok: 7</p>
+                        <button class="btn btn-primary">Detail</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="assets/AIR_JORDAN_1_LOW.jpg" class="card-img-top" alt="Sepatu Air Jordan 1 Low">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Jordan 1</h5>
+                        <p class="card-text">Harga: Rp 2.499.000</p>
+                        <p class="card-text">Stok: 5</p>
+                        <button class="btn btn-primary">Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <h3 class="mb-4">Tambah Sepatu Baru</h3>
+        <div class="card p-4">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Nama Sepatu</label>
+                    <input type="text" class="form-control" placeholder="Masukkan nama sepatu">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Harga</label>
+                    <input type="number" class="form-control" placeholder="Masukkan harga">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Stok</label>
+                    <input type="number" class="form-control" placeholder="Masukkan stok">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Kategori</label>
+                    <select class="form-select">
+                        <option>Running</option>
+                        <option>Basket</option>
+                        <option>Casual</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Simpan</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
